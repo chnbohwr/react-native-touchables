@@ -10,6 +10,7 @@ import {
     TouchableWithoutFeedback,
     View
 } from "react-native";
+import PropTypes from 'prop-types';
 import React from 'react';
 
 class TouchableWithColor extends React.Component {
@@ -58,10 +59,10 @@ class TouchableWithColor extends React.Component {
 }
 
 TouchableWithColor.propTypes = {
-    style           : React.PropTypes.object.isRequired,
-    onPress         : React.PropTypes.func.isRequired,
-    normalColor     : React.PropTypes.string.isRequired,
-    pressedColor    : React.PropTypes.string.isRequired
+    style           : PropTypes.object.isRequired,
+    onPress         : PropTypes.func.isRequired,
+    normalColor     : PropTypes.string.isRequired,
+    pressedColor    : PropTypes.string.isRequired
 }
 
 export default TouchableWithColor

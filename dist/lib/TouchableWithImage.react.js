@@ -11,6 +11,7 @@ import {
     TouchableWithoutFeedback,
     View,
 } from "react-native";
+import PropTypes from 'prop-types';
 import React from 'react';
 
 class TouchableWithImage extends React.Component {
@@ -54,10 +55,10 @@ class TouchableWithImage extends React.Component {
 }
 
 TouchableWithImage.propTypes = {
-    onPress             : React.PropTypes.func.isRequired,
-    imageContainerStyle : React.PropTypes.object.isRequired,
-    pressedImg          : React.PropTypes.number.isRequired,
-    normalImg           : React.PropTypes.number.isRequired
+    onPress             : PropTypes.func.isRequired,
+    imageContainerStyle : PropTypes.object.isRequired,
+    pressedImg          : PropTypes.number.isRequired,
+    normalImg           : PropTypes.number.isRequired
 }
 
 export default TouchableWithImage

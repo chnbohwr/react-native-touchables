@@ -3,14 +3,13 @@
 *   Copyright 2016 J&P Innovations Inc.
 */
 
-"use strict";
-
 import {
     StyleSheet,
     Text,
     TouchableWithoutFeedback,
     View
 } from "react-native"
+import PropTypes from 'prop-types';
 import React from 'react';
 
 class TouchableWithText extends React.Component {
@@ -58,12 +57,12 @@ class TouchableWithText extends React.Component {
 }
 
 TouchableWithText.propTypes = {
-    onPress         : React.PropTypes.func.isRequired,
-    text            : React.PropTypes.string.isRequired,
-    textStyle       : React.PropTypes.object.isRequired,
-    staticStyles    : React.PropTypes.object.isRequired,
-    pressedStyles   : React.PropTypes.object.isRequired,
-    normalStyles    : React.PropTypes.object.isRequired
+    onPress         : PropTypes.func.isRequired,
+    text            : PropTypes.string.isRequired,
+    textStyle       : PropTypes.object.isRequired,
+    staticStyles    : PropTypes.object.isRequired,
+    pressedStyles   : PropTypes.object.isRequired,
+    normalStyles    : PropTypes.object.isRequired
 }
 
-export default TouchableWithText
+export default TouchableWithText;
