@@ -5,7 +5,6 @@
 
 "use strict";
 
-import assign from "object-assign";
 import React, {
     Component,
     StyleSheet,
@@ -54,7 +53,7 @@ class TouchableWithColor extends Component {
             backgroundColor: (this.state.isPressed) ? this.props.pressedColor : this.props.normalColor
         }
         // Return the style rules.
-        return assign({}, staticStyles, dynamicStyles);
+        return Object.assign({}, staticStyles, dynamicStyles);
     }
 }
 
