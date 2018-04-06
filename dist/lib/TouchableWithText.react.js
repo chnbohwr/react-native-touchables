@@ -5,7 +5,6 @@
 
 "use strict";
 
-import assign from "object-assign";
 import React, {
     Component,
     StyleSheet,
@@ -41,7 +40,7 @@ class TouchableWithText extends Component {
     getBtnStyles() {
         let styles = this.props.staticStyles;
         let activeStyles = (this.state.isPressed) ? this.props.pressedStyles : this.props.normalStyles;
-        return assign({}, styles, activeStyles);
+        return Object.assign({}, styles, activeStyles);
 
     }
 
