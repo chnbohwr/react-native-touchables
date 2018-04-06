@@ -5,15 +5,15 @@
 
 "use strict";
 
-import React, {
-    Component,
+import {
     Image,
     StyleSheet,
     TouchableWithoutFeedback,
     View,
 } from "react-native";
+import React from 'react';
 
-class TouchableWithImage extends Component {
+class TouchableWithImage extends React.Component {
     constructor(props) {
         super(props);
 

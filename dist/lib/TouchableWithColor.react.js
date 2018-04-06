@@ -5,14 +5,14 @@
 
 "use strict";
 
-import React, {
-    Component,
+import {
     StyleSheet,
     TouchableWithoutFeedback,
     View
 } from "react-native";
+import React from 'react';
 
-class TouchableWithColor extends Component {
+class TouchableWithColor extends React.Component {
     constructor(props) {
         super(props);
 
