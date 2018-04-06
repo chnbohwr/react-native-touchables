@@ -17,8 +17,5 @@
     "buttons"
   ],
   "author": "Derek Johnston <derek@jackamo.io>",
-  "license": "ISC",
-  "dependencies": {
-    "object-assign": "^4.0.1"
-  }
+  "license": "ISC"
 }
